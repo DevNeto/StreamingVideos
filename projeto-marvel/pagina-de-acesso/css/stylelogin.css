@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url(../imagens/photo.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    overflow: auto;
+}
+.logologin{
+    width: 100px;
+    margin-left: 160px;
+    left:600px; position: absolute;
+    top: 185px; position: absolute;
+    cursor: pointer;
+
+}
+main.container {
+    background: rgb(255, 255, 255);
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(218, 206, 206, 0.765);
+    border-radius: 15px;
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #000000, #ff0000);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgb(154, 143, 143);
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #000000, #e00000);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.btn {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #000000, #f60808);
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    list-style: none;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #000000, #ff0000);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer .social-field {
+    padding: 0.2rem;
+    border-radius: 7px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 0.5rem;
+    margin-left: 015x;
+    font-size: 1rem;
+    
+    
+}
+.icon {
+    margin: 0 0.5rem;
+    width:  20px;
+    filter: invert(1);
+}
+
+.footer .social-field  {
+    padding: 7px 0px;
+    background: linear-gradient(to right, #ff0000, #000000);
+    color: #ffffff;
+    border-bottom: 2em;
+    border-radius: 30px ;
+    margin-bottom: 2px solid rgb(255, 255, 255);
+   /* background: linear-gradient(to right, #a80917, #000000);
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+    */
+}
+
+.footer .social-field .apple {
+    background: center;
+    background-color: #e00000;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+}
+/*
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+*/

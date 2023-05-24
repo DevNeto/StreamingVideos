@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: url(../imagens/Best-Movie-Doctor-Strange-Wallpapers-HD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 48px;
+}
+header .logo{
+    width: 250px;
+    margin-right: 35%;
+    
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navigation ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding-bottom: 5px;
+    border-radius: 40px 40px 40px 40px;
+    border-bottom: 5px solid transparent;
+    transition: all .6s; 
+}
+.navigation ul li a:hover{
+    border-bottom: 2px solid #000000; 
+}
+
+/*menu*/
+.navigation .Search{
+    margin-right: -10px;
+    width: 40px;
+    cursor: pointer;
+    filter: invert(1);
+    
+}
+.navigation .Perfil{
+    margin-left: -5px;
+    max-width: 40px;
+    cursor: pointer;
+}
+header .container0{ 
+    overflow: hidden;
+    width: 100%;
+    max-width: 580px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+    padding: 15px;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    margin-left: 30px;
+    margin: 0px;
+}
+/*main*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50em;
+    margin-top: 1.5em;
+
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+
+}
+main section .Logodofilme{
+    position: relative;
+    width: 500px;
+    margin: em1;
+    margin-bottom: 15px;
+    margin-left: 55px;
+    
+    
+    
+}
+main section .Logodofilme:hover{
+    transform: translateY(-20px)rotate(360deg);
+    transform: translateX(20POX);
+}
+.Logodofilme:hover ~ .Logodofilme{
+    transform: translateX(140px);
+}
+
+main section .btn-box{
+    position: absolute;
+    top: 450px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn-box .btn{
+    
+    padding: 20px 45px;
+    background: rgb(255, 0, 0);
+    color: #ffffff;
+    border-bottom: 2em;
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 2px solid rgb(255, 255, 255);
+    transition: all .3s;
+    border-bottom: 0px solid #ffffff;
+}
+.btn-box .btn:hover{
+    background: linear-gradient(45deg, #000000, #f60808,#000000);
+
+}
+.btn-box .btn:focus{
+    background:  #000000;
+}
+
+section video{
+    max-width: 500px;
+    position: fixed;
+    left: 750px; position: absolute;
+    top: 420px; position: absolute;
+    border-radius: 30px;
+}
+
+/*descrição*/
+main section .container{
+    position: absolute;
+    width: 100%;
+    top: 500px;
+    max-width: 575px;
+    background-color: transparent;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    line-height: 25px;
+    padding: 35px;
+    backdrop-filter: blur(30px);
+    border: 15px solid rgba(255, 0, 0, 0);
+    border-radius: 30px;
+    margin-left: 50px;
+    margin: 30px;
+    transition: all .3s;      
+}   
+.container:hover{
+    background: #ffffff4b;
+}
+
+/*play*/
+.btn-box2{
+    left: 930px; position: absolute;
+    top: 283px; position: absolute;
+    overflow: hidden;
+    width: 100%;
+    max-width: 250px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+    padding: 35px;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 30px ;
+    margin-left: 50px;
+    margin: 30px;
+}
+.btn-box2{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    margin-top: 2.4em;
+    border-radius: 30px 30px 0 0;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    font-size: 25px;
+    gap: 15px;
+    cursor: pointer;
+    transition: all .3s;      
+}   
+.btn-box2:hover{
+    background: #000000;
+    color: #ffffff;
+       
+}
+
+.btn-box2 .play{
+    width: 1.4em;
+    filter: invert();
+    
+}
+footer .galeria{
+    position: absolute;
+    top: 940px;
+    margin-bottom: 90px;
+    display:flex;
+    align-items: center;
+    margin-left: 90px;
+    margin-right: 300px;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    padding: 170px;
+    font-size: 400%;
+   
+}
+h1{
+    margin-left: -140px;
+    margin-top: -260px;
+    color: #290202;
+    font-size: 100%;
+}
+/*
+footer h1{
+    overflow: hidden;
+    width: 100%;
+    max-width: 575px;
+    background-color: transparent;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    line-height: 25px;
+    padding: 35px;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 0, 0, 0);
+    border-radius: 30px;
+    margin-left: 50px;
+    margin: 30px;
+    transition: all .3s;
+}
+*/
+footer .galeria:hover{
+    background: #ffffff36;
+}
+footer .galeria::before {
+    
+    top: 110px; position: absolute;
+    content: '';
+    height: 10px;
+    width: 350px;
+    bottom: 3px;
+    left: 30px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #000000, #f60808,#000000);
+}    
+footer .cards{
+    position: fixed;
+    top: 1100px; position: absolute;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin-left: 23em;
+    margin-top: 1.5em;
+}
+footer .cards .card{
+    height: 150px;
+    max-width: 250px;
+    margin-bottom: 50px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0);
+    margin-left: -100px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+    
+}
+footer .cards .card .img{
+    width: 0%;
+    height: 0%;
+    object-fit: cover;
+}
+.cards .card:hover{
+    transform: translateY(-16px)rotate(3deg);
+}
+.cards .card:hover ~ .card{
+    transform: translateX(140px);
+}
